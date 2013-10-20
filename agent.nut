@@ -1,4 +1,4 @@
-apiKey <- "gRKpXDENfo9YivbwEUah6DsQK2F3DRBP7AgKBiwu1a8m6O6Q"
+apiKey <- "YOUR API KEY GOES HERE";
 http.onrequest(function (req, resp) {
         try {
             local data = http.jsondecode(req.body);
