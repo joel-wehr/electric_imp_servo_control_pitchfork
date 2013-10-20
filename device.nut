@@ -27,10 +27,12 @@ function move_2_to( pos )
 agent.on("slider1", function (data) {
     server.log("Device received position request: "+ data);
     move_1_to(data.tofloat());
+    agent.send("slider1", "Servo 1 moved to: " + data)
 });
 agent.on("slider2", function (data) {
     server.log("Device received position request: "+ data);
     move_2_to(data.tofloat());
+    agent.send("slider2", "Servo 2 moved to: " + data)
 }); 
 function configureHardware()
 {
