@@ -1,4 +1,4 @@
-apiKey <- "YOUR API KEY GOES HERE";
+apiKey <- "YOUR API KEY GOES HERE"
 http.onrequest(function (req, resp) {
         try {
             local data = http.jsondecode(req.body);
